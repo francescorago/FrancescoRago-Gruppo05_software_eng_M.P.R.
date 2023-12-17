@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.calculator_project.VariableManagerTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! - in com.mycompany.calculator_project.VariableManagerTest
-testSubtractFromVariable  Time elapsed: 0.034 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: com.mycompany.calculator_project.ComplexNumber@757942a1<5.0+3.0j> but was: com.mycompany.calculator_project.ComplexNumber@4a87761d<5.0+3.0j>
-	at com.mycompany.calculator_project.VariableManagerTest.testSubtractFromVariable(VariableManagerTest.java:87)
-
-testAddToVariable  Time elapsed: 0.002 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: com.mycompany.calculator_project.ComplexNumber@10dba097<3.0+5.0j> but was: com.mycompany.calculator_project.ComplexNumber@1786f9d5<3.0+5.0j>
-	at com.mycompany.calculator_project.VariableManagerTest.testAddToVariable(VariableManagerTest.java:76)
-
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in com.mycompany.calculator_project.VariableManagerTest

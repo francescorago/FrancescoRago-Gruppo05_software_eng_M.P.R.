@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.026" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.124" tests="39" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,8 +18,8 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\macer\AppData\Local\Temp\surefire1319149878007817718\surefirebooter6591451258845148722.jar C:\Users\macer\AppData\Local\Temp\surefire1319149878007817718 2023-12-15T21-41-31_894-jvmRun1 surefire2967884287390070487tmp surefire_0272505133790635125tmp"/>
-    <property name="test" value="com.mycompany.calculator_project.CalculatorOperationsTest#testMultiplicationNegative"/>
+    <property name="sun.java.command" value="C:\Users\macer\AppData\Local\Temp\surefire5156770757102125975\surefirebooter5210285895350666900.jar C:\Users\macer\AppData\Local\Temp\surefire5156770757102125975 2023-12-16T13-21-18_065-jvmRun1 surefire7756800371754687300tmp surefire_08109797338076268782tmp"/>
+    <property name="test" value="com.mycompany.calculator_project.CalculatorOperationsTest"/>
     <property name="surefire.test.class.path" value="C:\Users\macer\OneDrive\Documenti\NetBeansProjects\Calculator_project\target\test-classes;C:\Users\macer\OneDrive\Documenti\NetBeansProjects\Calculator_project\target\classes;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\macer\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\macer\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\macer\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\macer\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\macer"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\macer\AppData\Local\Temp\surefire1319149878007817718\surefirebooter6591451258845148722.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\macer\AppData\Local\Temp\surefire5156770757102125975\surefirebooter5210285895350666900.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,5 +62,47 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testMultiplicationNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.019"/>
+  <testcase name="testMultiplicationZero" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.026"/>
+  <testcase name="testAdditionOpposite" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testSquareRootNoReal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.002"/>
+  <testcase name="testDivisionWithZero" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.018">
+    <error message="Divisione per zero non consentita." type="java.lang.ArithmeticException">java.lang.ArithmeticException: Divisione per zero non consentita.
+	at com.mycompany.calculator_project.CalculatorOperationsTest.testDivisionWithZero(CalculatorOperationsTest.java:307)
+</error>
+  </testcase>
+  <testcase name="testInverseNoImaginary" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testSquareRootNegativeDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.003"/>
+  <testcase name="testSquareRootNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testInverseNoReal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testAdditionNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testInverseDecimalNumbers" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testMultiplication" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testAddition" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSquareRootDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testAdditionDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testMultiplicationDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.005"/>
+  <testcase name="testMultiplicationNoImag" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.002"/>
+  <testcase name="testMultiplicationNoReal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testDivisionPositiveDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSubtractionDecimalNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testDivisionNegativeDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testMultiplicationNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testDivisionNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSubtractionNoImag" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.002"/>
+  <testcase name="testSubtractionNoReal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSubtractionZero" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testAdditionZero" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSubtractionDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSubtractionNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testDivisionNoImag" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testDivisionNoReal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testDivision" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSquareRoot" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testAdditionNoImag" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.003"/>
+  <testcase name="testAdditionNoReal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testMultiplicationNegativeDecimal" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0"/>
+  <testcase name="testInverse" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testAdditionDecimalNegative" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSubtraction" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
+  <testcase name="testSquareRootNoImaginary" classname="com.mycompany.calculator_project.CalculatorOperationsTest" time="0.001"/>
 </testsuite>

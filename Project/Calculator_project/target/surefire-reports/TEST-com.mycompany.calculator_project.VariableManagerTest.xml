@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.calculator_project.VariableManagerTest" time="0.056" tests="4" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.calculator_project.VariableManagerTest" time="0.048" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\macer\AppData\Local\Temp\surefire1383995718909397997\surefirebooter7421915297498992180.jar C:\Users\macer\AppData\Local\Temp\surefire1383995718909397997 2023-12-15T23-18-53_803-jvmRun1 surefire7964384953646838023tmp surefire_04009630853063744710tmp"/>
+    <property name="sun.java.command" value="C:\Users\macer\AppData\Local\Temp\surefire7382231518108989114\surefirebooter441278853820435099.jar C:\Users\macer\AppData\Local\Temp\surefire7382231518108989114 2023-12-16T13-21-31_412-jvmRun1 surefire2698358760303946418tmp surefire_08041232531218973407tmp"/>
     <property name="test" value="com.mycompany.calculator_project.VariableManagerTest"/>
     <property name="surefire.test.class.path" value="C:\Users\macer\OneDrive\Documenti\NetBeansProjects\Calculator_project\target\test-classes;C:\Users\macer\OneDrive\Documenti\NetBeansProjects\Calculator_project\target\classes;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\macer\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\macer\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\macer\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\macer\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\macer\AppData\Local\Temp\surefire1383995718909397997\surefirebooter7421915297498992180.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\macer\AppData\Local\Temp\surefire7382231518108989114\surefirebooter441278853820435099.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,16 +62,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testSubtractFromVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.034">
-    <failure message="expected: com.mycompany.calculator_project.ComplexNumber@757942a1&lt;5.0+3.0j&gt; but was: com.mycompany.calculator_project.ComplexNumber@4a87761d&lt;5.0+3.0j&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: com.mycompany.calculator_project.ComplexNumber@757942a1<5.0+3.0j> but was: com.mycompany.calculator_project.ComplexNumber@4a87761d<5.0+3.0j>
-	at com.mycompany.calculator_project.VariableManagerTest.testSubtractFromVariable(VariableManagerTest.java:87)
-]]></failure>
-  </testcase>
-  <testcase name="testSaveToVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.003"/>
-  <testcase name="testPushFromVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
-  <testcase name="testAddToVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.002">
-    <failure message="expected: com.mycompany.calculator_project.ComplexNumber@10dba097&lt;3.0+5.0j&gt; but was: com.mycompany.calculator_project.ComplexNumber@1786f9d5&lt;3.0+5.0j&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: com.mycompany.calculator_project.ComplexNumber@10dba097<3.0+5.0j> but was: com.mycompany.calculator_project.ComplexNumber@1786f9d5<3.0+5.0j>
-	at com.mycompany.calculator_project.VariableManagerTest.testAddToVariable(VariableManagerTest.java:76)
-]]></failure>
-  </testcase>
+  <testcase name="testSaveToVariable_Decimal" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.023"/>
+  <testcase name="testSubtractFromVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
+  <testcase name="testSaveToVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
+  <testcase name="testPushFromVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testAddToVariable_Negative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testAddToVariable_Decimal" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testSubtractFromVariable_Negative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testAddToVariable" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testPushFromVariable_Decimal" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testSaveToVariable_Negative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
+  <testcase name="testPushFromVariable_Negative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testAddToVariable_DecimalNegative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
+  <testcase name="testPushFromVariable_DecimalNegative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
+  <testcase name="testSaveToVariable_DecimalNegative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
+  <testcase name="testSubtractFromVariable_Decimal" classname="com.mycompany.calculator_project.VariableManagerTest" time="0"/>
+  <testcase name="testSubtractFromVariable_DecimalNegative" classname="com.mycompany.calculator_project.VariableManagerTest" time="0.001"/>
 </testsuite>

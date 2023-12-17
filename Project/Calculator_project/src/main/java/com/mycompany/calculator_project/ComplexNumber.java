@@ -57,27 +57,39 @@ public ComplexNumber(String complexNumber) {
     }
 }
 
+@Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
 
+        ComplexNumber that = (ComplexNumber) obj;
 
+        return Double.compare(that.real, real) == 0 &&
+               Double.compare(that.imag, imag) == 0;
+    }
 
-
-
-
-
-
-
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(real);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(imag);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
     
     // Metodo per ottenere la rappresentazione testuale del numero complesso
     @Override
-public String toString() {
-    if (imag == 0) {
-        return String.valueOf(real);
-    } else if (real == 0) {
-        return imag + "j";
-    } else {
-        return real + (imag >= 0 ? "+" : "") + imag + "j";
+    public String toString() {
+        if (imag == 0) {
+            return String.valueOf(real);
+        } else if (real == 0) {
+            return imag + "j";
+        } else {
+            return real + (imag >= 0 ? "+" : "") + imag + "j";
+        }
     }
-}
 
     
     

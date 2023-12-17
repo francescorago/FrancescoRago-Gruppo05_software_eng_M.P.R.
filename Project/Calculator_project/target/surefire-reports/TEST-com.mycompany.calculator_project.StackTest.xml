@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.calculator_project.StackTest" time="0.053" tests="10" errors="1" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.calculator_project.StackTest" time="0.058" tests="28" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\macer\AppData\Local\Temp\surefire6600099982947925314\surefirebooter8781274110082013031.jar C:\Users\macer\AppData\Local\Temp\surefire6600099982947925314 2023-12-15T22-44-21_935-jvmRun1 surefire3125221692742558143tmp surefire_01661053389359205109tmp"/>
+    <property name="sun.java.command" value="C:\Users\macer\AppData\Local\Temp\surefire2575717250564784038\surefirebooter3133570636767226815.jar C:\Users\macer\AppData\Local\Temp\surefire2575717250564784038 2023-12-16T13-21-42_270-jvmRun1 surefire6072554019848027434tmp surefire_02321371460271714227tmp"/>
     <property name="test" value="com.mycompany.calculator_project.StackTest"/>
     <property name="surefire.test.class.path" value="C:\Users\macer\OneDrive\Documenti\NetBeansProjects\Calculator_project\target\test-classes;C:\Users\macer\OneDrive\Documenti\NetBeansProjects\Calculator_project\target\classes;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\macer\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\macer\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\macer\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\macer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\macer\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\macer\AppData\Local\Temp\surefire6600099982947925314\surefirebooter8781274110082013031.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\macer\AppData\Local\Temp\surefire2575717250564784038\surefirebooter3133570636767226815.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,26 +62,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testDup" classname="com.mycompany.calculator_project.StackTest" time="0.029">
-    <failure message="expected: com.mycompany.calculator_project.ComplexNumber@192d3247&lt;4.0j&gt; but was: com.mycompany.calculator_project.ComplexNumber@3ecd23d9&lt;4.0j&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: com.mycompany.calculator_project.ComplexNumber@192d3247<4.0j> but was: com.mycompany.calculator_project.ComplexNumber@3ecd23d9<4.0j>
-	at com.mycompany.calculator_project.StackTest.testDup(StackTest.java:105)
-]]></failure>
-  </testcase>
-  <testcase name="testPop" classname="com.mycompany.calculator_project.StackTest" time="0.003"/>
-  <testcase name="testClear" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testOverDecimal" classname="com.mycompany.calculator_project.StackTest" time="0.019"/>
+  <testcase name="testSwapNegative" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testDropNegative" classname="com.mycompany.calculator_project.StackTest" time="0.002"/>
+  <testcase name="testSwapDecimal" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testDup" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testClear" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testSwapDecimalNegative" classname="com.mycompany.calculator_project.StackTest" time="0"/>
   <testcase name="testDrop" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
-  <testcase name="testOver" classname="com.mycompany.calculator_project.StackTest" time="0.001">
-    <failure message="expected: &lt;-2.0+7.0j&gt; but was: &lt;1.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <-2.0+7.0j> but was: <1.0>
-	at com.mycompany.calculator_project.StackTest.testOver(StackTest.java:131)
-]]></failure>
-  </testcase>
+  <testcase name="testOver" classname="com.mycompany.calculator_project.StackTest" time="0"/>
   <testcase name="testSize" classname="com.mycompany.calculator_project.StackTest" time="0"/>
   <testcase name="testSwap" classname="com.mycompany.calculator_project.StackTest" time="0"/>
-  <testcase name="testPush_double" classname="com.mycompany.calculator_project.StackTest" time="0.001">
-    <error message="Not supported yet." type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Not supported yet.
-	at com.mycompany.calculator_project.StackTest.testPush_double(StackTest.java:159)
-</error>
-  </testcase>
-  <testcase name="testPush_ComplexNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testDupNegative" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testPush_double" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testOverDecimalNegative" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testOverNegative" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPopComplexDecimalNegativeNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPushComplexNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPopComplexNegativeNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPushComplexDecimalNegativeNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testDupDecimalNegative" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPopComplexDecimalNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPopComplexNumber" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testDupDecimal" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testDropDecimalNegative" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testDropDecimal" classname="com.mycompany.calculator_project.StackTest" time="0"/>
   <testcase name="testIsEmpty" classname="com.mycompany.calculator_project.StackTest" time="0.001"/>
+  <testcase name="testPushComplexNegativeNumber" classname="com.mycompany.calculator_project.StackTest" time="0"/>
+  <testcase name="testPushComplexDecimalNumber" classname="com.mycompany.calculator_project.StackTest" time="0"/>
 </testsuite>

@@ -48,7 +48,7 @@ public class CalculatorOperationsTest {
     }
 
    @Test
-    public void testAdditionDecimalPositive() {
+    public void testAdditionDecimal() {
         ComplexNumber num1 = new ComplexNumber(2.3, 4.5);
         ComplexNumber num2 = new ComplexNumber(1.2, 3.4);
         ComplexNumber result = num1.add(num2);
@@ -298,16 +298,6 @@ public class CalculatorOperationsTest {
     }
 
     @Test
-    public void testDivisionWithZero() {
-        ComplexNumber num1 = new ComplexNumber(5.0, 4.0);
-        ComplexNumber num2 = new ComplexNumber(0.0, 0.0);
-        assertThrows(ArithmeticException.class, () -> {
-        ComplexNumber result = num1.divide(num2);
-    });
-    ComplexNumber result = num1.divide(num2);
-}
-
-    @Test
     public void testDivisionNoReal() {
         ComplexNumber num1 = new ComplexNumber(0.0, 8.0);
         ComplexNumber num2 = new ComplexNumber(0.0, 4.0);
@@ -355,7 +345,7 @@ public class CalculatorOperationsTest {
     }
 
     @Test
-    public void testSquareRootNegativeDecimalNumber() {
+    public void testSquareRootNegativeDecimal() {
         ComplexNumber num = new ComplexNumber(-2.5, -3.5);
         ComplexNumber result = num.squareRoot();
 

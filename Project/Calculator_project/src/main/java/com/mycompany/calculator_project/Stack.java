@@ -10,7 +10,7 @@ import java.util.EmptyStackException;
 import java.util.List;
 
 public class Stack {
-    private static final int MAX_CAPACITY = 12;
+    
     private  List<ComplexNumber> stack;
 
     public Stack() {
@@ -18,10 +18,6 @@ public class Stack {
     }
 
     public void push(ComplexNumber number) throws StackOverflowError {
-        if (stack.size() >= MAX_CAPACITY) {
-            throw new StackOverflowError("Stack is full. Cannot push more elements.");
-// quest eccezione verrà controllata nel design, dove se ci troviamo in questa situazione disattiva alcuni tasti
-        }
         stack.add(number);
     }
 
